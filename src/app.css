@@ -8,3 +8,9 @@
 		@apply h-full;
 	}
 }
+
+@layer components {
+	.btn-primary {
+		@apply border py-1 px-3 rounded-md cursor-pointer hover:bg-gray-600 hover:text-white;
+	}
+}
