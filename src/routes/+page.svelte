@@ -8,7 +8,7 @@
 	let selectedMethod = 'login';
 
 	let loginHandler = async ({ email, password }: LoginFormData) => {
-		const { data } = await axios.post<{ ok: boolean }>('http://localhost:3000/user/login', {
+		const { data } = await axios.post<{ ok: boolean }>('/api/user/login', {
 			email,
 			password
 		});
@@ -25,7 +25,7 @@
 			lastname: string;
 			email: string;
 			role_id: number;
-		}>('http://localhost:3000/user/', {
+		}>('/api/user/', {
 			name,
 			lastname,
 			email,
